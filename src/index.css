@@ -109,3 +109,40 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+.listePoké {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto; 
+}
+
+.cartePoké {
+  border: 1px solid gray;
+  border-radius: 3vw;
+  background-color: wheat;
+  padding: 16px;
+  text-align: center;
+  transition: transform 0.15s ease;
+}
+
+.cartePoké:hover {
+  transform: translateY(-4px);
+}
+
+.cartePoké h3 {
+  margin: 8px 0 4px;
+  text-transform: capitalize;
+  font-size: 3vh;
+  font-weight: bold;
+}
+
+.cartePoké h5 {
+  margin: 0;
+  color: grey;
+  font-weight: normal;
+  font-size: 13px;
+  text-transform: capitalize;
+}
