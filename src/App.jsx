@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-        <ListePokemon pokemons = {pokemons}/>
+      <ListePokemon pokemons = {pokemons}/>
     </>
   )
 }
