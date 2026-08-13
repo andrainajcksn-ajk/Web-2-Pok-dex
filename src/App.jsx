@@ -7,12 +7,11 @@ function App() {
   useEffect(() => {
     const fetchAllPokes = async() => {
       const requetes = [];
-        for (let i = 1; i <= 100; i++) {
-          requetes.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
-          .then(r => r.json())
-        );
+      for (let i = 1; i <= 100; i++) {
+        requetes.push(fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
+        .then(r => r.json()));
       }
-      const resultat = await Promise.all(requetes);
+      const resultat = await Promise.all(requetes); 
       const formatTableau = resultat.map(p => ({
         id: p.id,
         name: p.name,
@@ -26,7 +25,7 @@ function App() {
 
   return (
     <>
-        <ListePokemon pokemons = {pokemons}/>
+      <ListePokemon pokemons = {pokemons}/>
     </>
   )
 }
